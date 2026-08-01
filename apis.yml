@@ -1,7 +1,23 @@
 aid: sendbloom
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/sendbloom.png
 name: sendbloom
-description: sendbloom is a company surfaced as a portfolio company of slow-ventures and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: sendbloom was surfaced as a portfolio company of Slow Ventures and added to the API
+  Evangelist network as a stub for enrichment. An enrichment probe on 2026-07-21 found sendbloom.com
+  parked on a Namecheap parking IP with no live HTTPS site (it 302-redirects to a non-resolving host);
+  no docs, developer, or api subdomain resolves and no public API surface exists. Google Workspace MX
+  and a legacy email-SaaS SPF record (Intercom + Mandrill) remain, indicating a dormant/defunct provider
+  rather than an active API. Kept as a lead; no artifacts beyond a probed domain-security profile.
 url: https://raw.githubusercontent.com/api-evangelist/sendbloom/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,7 +27,9 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
+x-status: dormant
+x-status-detail: sendbloom.com is parked (Namecheap parking IP, redirects to non-resolving host); no live web or API surface as of 2026-07-21.
 tags:
 - Company
 apis: []
@@ -21,5 +39,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/sendbloom-domain-security.yml
 - type: Website
   url: https://sendbloom.com
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
