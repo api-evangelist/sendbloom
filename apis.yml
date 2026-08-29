@@ -30,6 +30,9 @@ description: sendbloom was surfaced as a portfolio company of Slow Ventures and 
   and a legacy email-SaaS SPF record (Intercom + Mandrill) remain, indicating a dormant/defunct provider
   rather than an active API. Kept as a lead; no artifacts beyond a probed domain-security profile.
 url: https://raw.githubusercontent.com/api-evangelist/sendbloom/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
+x-api-posture-note: "An enrichment probe on 2026-07-21 found sendbloom.com parked on a Namecheap parking IP with no live HTTPS site (it 302-redirects to a non-resolving host); no docs, developer, or api subdomain resolves"
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
